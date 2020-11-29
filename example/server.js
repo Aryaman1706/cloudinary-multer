@@ -1,9 +1,27 @@
 const express = require("express");
 const multer = require("multer");
 const Joi = require("joi");
+const cloudinary = require("cloudinary").v2;
 const cloudinaryStorage = require("../lib/config/storage");
 
+cloudinary.config({
+  cloud_name: "XXXXXXXXX",
+  api_key: "XXXXXXXXX",
+  api_secret: "XXXXXXXXX",
+});
+
 const validator = (body) => {
+  /**
+   * req.body would be passed as a parameter(body) here
+   * Order of req.body is very important for validating.
+   * Make sure that file is the LAST FIELD in req.body.
+   * example:-
+        req.body: {
+            email: "test_email@mail.com",
+            username: "test username"
+            file: {FILE}
+        }
+   */
   const schema = Joi.object({
     email: Joi.string().email().required(),
     username: Joi.string().max(40).required(),
@@ -15,7 +33,6 @@ const validator = (body) => {
 
 const storage = cloudinaryStorage({
   cloudinary: cloudinary,
-  unsignedName: "",
   validator: validator,
 });
 
