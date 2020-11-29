@@ -12,7 +12,11 @@
   },
   "keywords": [
     "multer",
-    "cloudinary"
+    "cloudinary",
+    "storage",
+    "storage engine",
+    "upload files",
+    "cloud storage"
   ],
   "author": "Aryaman Grover",
   "license": "MIT",
