@@ -1,6 +1,9 @@
 {
   "name": "multer-storage-cloudinary",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=9.0.0"
+  },
   "description": "A custom multer store for uploading assets to cloudinary.",
   "main": "index.js",
   "scripts": {
@@ -21,6 +24,7 @@
   "dependencies": {
     "cloudinary": "^1.23.0",
     "express": "^4.17.1",
+    "joi": "^17.3.0",
     "multer": "^1.4.2"
   }
 }
