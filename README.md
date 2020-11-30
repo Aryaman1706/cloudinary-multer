@@ -1,10 +1,13 @@
 # Cloudinary-Multer
 
+[cloudinary-multer](https://www.npmjs.com/package/cloudinary-multer)
+
 A custom multer storage engine to upload assets to cloudinary.
 
 ### Installation
 
 cloudinary-multer can be installed easily via [npm](https://www.npmjs.com/)
+
 `npm install cloudinary-multer`
 
 ## Usage
@@ -43,6 +46,7 @@ Custom Storage Engine has 4 options namely:-
 
 The cloudinary library instance to be used for uploading assets.
 Configuration options can be found [here](https://cloudinary.com/documentation/node_integration#configuration)
+
 **Example**:-
 
 ```javascript
@@ -57,7 +61,9 @@ cloudinary.config({
 
 Since `req.body` is not available prior to the multer middleware, it seemed to be a good idea to include a validator to validate the request body.
 `validator` is supposed to be function that would return false for valid body and an error message/true otherwise.
+
 **The order of fields in req.body is very important. Make sure that the field of type "file" must be last. All other fields that need to be validated should be on top.**
+
 **Example**:-
 
 ```javascript
