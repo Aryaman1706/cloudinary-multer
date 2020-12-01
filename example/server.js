@@ -2,12 +2,12 @@ const express = require("express");
 const multer = require("multer");
 const Joi = require("joi");
 const cloudinary = require("cloudinary").v2;
-const cloudinaryStorage = require("../lib/config/storage");
+const cloudinaryStorage = require("cloudinary-multer");
 
 cloudinary.config({
-  cloud_name: "XXXXXXXXX",
-  api_key: "XXXXXXXXX",
-  api_secret: "XXXXXXXXX",
+  cloud_name: "dkkq14s4l",
+  api_key: "237712754911295",
+  api_secret: "sSo1Rn8Cl-IsodYDE9_d7b_bHgs",
 });
 
 const validator = (body) => {

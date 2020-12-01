@@ -1,6 +1,6 @@
 {
   "name": "cloudinary-multer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": ">=9.0.0"
   },
@@ -21,7 +21,6 @@
   "author": "Aryaman Grover",
   "license": "MIT",
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-node": "^4.1.0",
@@ -29,12 +28,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4"
   },
-  "dependencies": {
-    "cloudinary": "^1.23.0",
-    "express": "^4.17.1",
-    "joi": "^17.3.0",
-    "multer": "^1.4.2"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aryaman1706/cloudinary-multer.git"
